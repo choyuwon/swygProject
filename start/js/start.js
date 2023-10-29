@@ -222,16 +222,3 @@ function back() {
     viewAllTypesButton.style.display = 'block';
     viewAllTypesButton.style = 'center';
 }
-
-function reStart() {
-    result.style.WebkitAnimation = "fadeOut 1s";
-    result.style.animation = "fadeOut 1s";
-    setTimeout(() => {
-        main.style.WebkitAnimation = "fadeIn 1s";
-        main.style.animation = "fadeIn 1s";
-        setTimeout(() => {
-            result.style.display = "none";
-            main.style.display = "block";
-        }, 450);
-    }, 450);
-}
